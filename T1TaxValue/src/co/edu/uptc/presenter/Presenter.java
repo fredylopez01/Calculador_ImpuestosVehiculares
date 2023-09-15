@@ -17,8 +17,8 @@ public class Presenter {
 		viewTest = new View();
 		simulatorTest = new Simulator();
 		persistence = new Persistence("data/data.txt");
-//		persistence.readDatesCSV(simulatorTest.getBrands());
-		persistence.readDates(simulatorTest.getBrands());
+		persistence.readDatesCSV(simulatorTest.getBrands());
+//		persistence.readDates(simulatorTest.getBrands());
 		persistence.readRatesFile(simulatorTest.getRates());
 		persistence.readDiscountsFile(simulatorTest.getDiscounts());
 	}

@@ -50,7 +50,8 @@ public class Persistence {
 		int year = 1970;
 		for(int i = 11; i <= 65; i++) {
 			if(Integer.parseInt(modelString[i]) != 0) {
-				readBrands(modelString[1].replace("\"", "") + "_" + modelString[5].replace("\"", "") + "_" + year + "_" + Integer.parseInt(modelString[i])*1000 + "\n", brands);
+				readBrands(modelString[1].replace("\"", "") + "_" + modelString[5].replace("\"", "") + "-" + modelString[6].replace("\"", "") 
+						+ "_" + year + "_" + Integer.parseInt(modelString[i])*1000 + "\n", brands);
 			}
 			year++;
 		}
